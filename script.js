@@ -85,11 +85,6 @@ function desencriptarPalabra() {
     asignarTextoElemento("textoEncriptado", textoDesencriptado);
 }
 
-/* function copiarPalabra() {
-    let textoCopiado = document.getElementById("textoEncriptado")
-    console.log(textoCopiado)
-} */
-
 function copiarPalabra() {
     let textoCopiado = document.getElementById("textoEncriptado").innerText;
     navigator.clipboard.writeText(textoCopiado).then(() => {
