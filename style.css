@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #F3F5FC;
+}
+.logo {
+    padding: 5%;
+}
+.encriptador {
+    width: 90%;
+    margin: 0 auto;
+    height: 70vh;
+}
+.encriptador_texto {
+    background-color: #F3F5FC;
+    color: #0A3871;
+    text-align: start;
+    text-decoration: none;
+    height: 70%;
+    width: 100%;
+    font-size: 1.6rem;
+    border: none;
+}
+.encriptador_botones {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* border: solid red; */
+    gap: 15px;
+}
+.encriptador_botones .inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.encriptador_botones img {
+    width: 70%;
+    max-width: 250px;
+}
+
+.encriptador_botones input {
+    padding: 7%;
+    border-radius: 20px;
+    background-color: #0A3871;
+    border: #0A3871;
+    color: #FFFFFF;
+}
+.encriptador_botones input:hover {
+    background-color: grey;
+}
+.mensaje {
+    width: 90%;
+    background-color: white;
+    padding: 5%;
+    margin: 0 auto;
+    margin-bottom: 10%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    text-align: center;
+}
+
+@media(min-width: 500px) {
+    .encriptador_botones img {
+        width: 35%;
+    }
+    .encriptador_botones .inputs {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .encriptador_botones input {
+        width: 50%;
+        padding: 3%;
+    }
+}
+
+@media(min-width: 1024px) {
+    main {
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+        gap: 30px;
+    }
+    .encriptador {
+        position: relative;
+        width: 70%;
+    }
+    .encriptador_botones {
+        position: absolute;
+        bottom: 0px;
+    }
+    .mensaje {
+        width: 35%;
+        height: 70vh;
+    }
+}
