@@ -50,8 +50,10 @@ function encriptarPalabra() {
     asignarTextoElemento("tituloMensaje", "");
     asignarTextoElemento("textoEncriptado", textoEncriptado);
 
-    document.getElementById("boton_copiar").removeAttribute("disabled")
+    let boton = document.getElementById("boton_copiar")
     asignarTextoElemento("boton_copiar","Copiar")
+    boton.style.display = "block"
+    boton.disabled = false
 }
 
 function desencriptarPalabra() {

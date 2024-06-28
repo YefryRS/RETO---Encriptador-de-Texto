@@ -65,6 +65,14 @@ body {
     gap: 15px;
     text-align: center;
 }
+.mensaje button {
+    padding: 7%;
+    border-radius: 20px;
+    background-color: white;
+    border: #0A3871 solid 1px;
+    color: #0A3871;
+    display: none;
+}
 
 @media(min-width: 500px) {
     .encriptador_botones img {
@@ -77,6 +85,9 @@ body {
     }
     .encriptador_botones input {
         width: 50%;
+        padding: 3%;
+    }
+    .mensaje button {
         padding: 3%;
     }
 }
@@ -99,5 +110,12 @@ body {
     .mensaje {
         width: 35%;
         height: 70vh;
+        position: relative;
+    }
+    .mensaje button {
+        position: absolute;
+        width: 80%;
+        bottom: 0px;
+        left: 30px;
     }
 }
